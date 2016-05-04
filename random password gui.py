@@ -70,8 +70,11 @@ def main():
                                             update_password(password_entry))
     button_update_password.grid(row=1, column=2)
 
+    size_label = Tkinter.Label(text='Size:')
+    size_label.grid(row=3, column=0)
 
-
+    size_entry = Tkinter.Entry(top, font=monospace_font)
+    size_entry.grid(row=3, column=1)
 
     update_password(password_entry)
 
